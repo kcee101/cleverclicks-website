@@ -121,38 +121,43 @@ body {
   .hero p {
     font-size: 1.25rem;
   }
-  /* Button Styles - Responsive */
-.btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border-radius: 50px;
-  text-decoration: none !important; /* ← Critical: removes underline */
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
+ /* === FINAL BUTTON STYLES (Forces Correct Look) === */
+.btn,
+a.btn,
+button.btn {
+  display: inline-block !important;
+  padding: 14px 32px !important;
+  background-color: #FF9F43 !important;
+  color: white !important;
+  text-decoration: none !important; /* 🔥 Removes underline */
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  box-shadow: 0 4px 10px rgba(255, 159, 67, 0.3) !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  font-size: 1rem !important;
 }
 
-.btn-primary {
-  background: #FF9F43;
-  color: white !important; /* ← Forces white text */
-}
-
-.btn-primary:hover {
-  background: #FF7A00;
-  transform: translateY(-2px);
-}
-
+/* Secondary Button */
 .btn-secondary {
-  background: transparent;
-  border: 2px solid #FF9F43;
+  background-color: transparent !important;
+  border: 2px solid #FF9F43 !important;
   color: #FF9F43 !important;
 }
 
 .btn-secondary:hover {
-  background: #FF9F43;
+  background-color: #FF9F43 !important;
   color: white !important;
+}
+
+/* Hover Effect */
+.btn:hover,
+a.btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 15px rgba(255, 159, 67, 0.4) !important;
 }
 
 /* Services */
@@ -259,24 +264,30 @@ body {
   font-size: 1.2rem;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-}
-
+/* === FINAL FOOTER LINK STYLES === */
 .footer-links a {
-  color: #CCCCCC;
-  text-decoration: none; /* Removes underline */
-  transition: color 0.3s ease;
-  font-size: 0.95rem;
+  color: #CCCCCC !important;        /* Light gray */
+  text-decoration: none !important; /* 🔥 Remove underline */
+  font-size: 0.95rem !important;
+  transition: color 0.3s ease !important;
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .footer-links a:hover {
-  color: #FF9F43;
+  color: #FF9F43 !important;         /* Orange on hover */
+}
+
+/* Ensure no default styling sneaks in */
+.footer-links ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-links li {
+  margin-bottom: 10px !important;
 }
 .footer-contact p {
   margin-bottom: 10px;
