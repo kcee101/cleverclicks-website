@@ -20,7 +20,7 @@ body {
 
 /* Compact Header - Less Space */
 .header {
-  padding: 0.8rem 0;
+  padding: 1.2rem 0; /* Increased from 0.8rem */
   background-color: #002B5C;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -34,9 +34,17 @@ body {
   align-items: center;
 }
 
+/* Responsive Logo Size */
 .header .logo img {
-  height: 40px; /* Reduced from default */
+  height: 58px; /* Increased from 50px */
   width: auto;
+  transition: height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .header .logo img {
+    height: 50px; /* Slightly smaller on mobile, but still readable */
+  }
 }
 
 .header .nav ul {
@@ -113,20 +121,22 @@ body {
   .hero p {
     font-size: 1.25rem;
   }
-  .btn {
+  /* Button Styles - Responsive */
+.btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 14px 32px;
   border-radius: 50px;
-  text-decoration: none;
+  text-decoration: none !important; /* ← Critical: removes underline */
   font-weight: 600;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn-primary {
   background: #FF9F43;
-  color: white;
+  color: white !important; /* ← Forces white text */
 }
 
 .btn-primary:hover {
@@ -137,12 +147,12 @@ body {
 .btn-secondary {
   background: transparent;
   border: 2px solid #FF9F43;
-  color: #FF9F43;
+  color: #FF9F43 !important;
 }
 
 .btn-secondary:hover {
   background: #FF9F43;
-  color: white;
+  color: white !important;
 }
 
 /* Services */
@@ -251,6 +261,7 @@ body {
 
 .footer-links ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .footer-links li {
@@ -259,14 +270,14 @@ body {
 
 .footer-links a {
   color: #CCCCCC;
-  text-decoration: none;
+  text-decoration: none; /* Removes underline */
   transition: color 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .footer-links a:hover {
   color: #FF9F43;
 }
-
 .footer-contact p {
   margin-bottom: 10px;
 }
@@ -288,14 +299,22 @@ body {
   text-decoration: none;
 }
 
-/* Responsive */
+/* Mobile Nav Adjustment */
 @media (max-width: 768px) {
   .header .nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
+    background: #002B5C;
+    padding: 0.5rem 0;
+    position: static;
   }
 
+  .header .nav a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
   .hero h1 {
     font-size: 2.5rem;
   }
