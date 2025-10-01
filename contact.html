@@ -1,79 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Clever Clicks Concept</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Clever Clicks Concept</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Clever Clicks Concept" width="180" />
-      </a>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Contact -->
-  <section class="contact">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p style="text-align: center; margin-bottom: 2rem;">
-        Have a project in mind? Need help growing your business? Send us a message!
-      </p>
-
-      <form action="#" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-
-      <div class="contact-info" style="margin-top: 3rem; text-align: center;">
-        <p>Email: <a href="mailto:support@cleverclicksconcept.com">support@cleverclicksconcept.com</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="images/logo.png" alt="Clever Clicks Concept" width="150" />
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-placeholder.png" alt="Clever Clicks Concept Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Growth Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <p>Email: <a href="mailto:support@cleverclicksconcept.com">support@cleverclicksconcept.com</a></p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Clever Clicks Concept Inc. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <script src="script.js"></script>
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="container">
+                <h1>Let's Start a Conversation</h1>
+                <p>We're ready to answer your questions and help you build a powerful digital strategy. Reach out today!</p>
+            </div>
+        </section>
+
+        <section class="contact-details-form section-padding">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you're looking for a consultation or just have a question, our team is here to help.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <p>Shagari Plaza, Garki Area 1, FCT Abuja</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <p>support@cleverclicksconcept.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form action="#" method="POST" class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-placeholder-white.png" alt="Clever Clicks Concept Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Growth Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Shagari Plaza, Garki Area 1, FCT Abuja</p>
+                <p><i class="fas fa-envelope"></i> support@cleverclicksconcept.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Clever Clicks Concept. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
