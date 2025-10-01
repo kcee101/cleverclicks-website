@@ -57,18 +57,20 @@
 
                 <div class="contact-form-container">
                     <h2>Send Us a Message</h2>
-                    <form action="#" method="POST" class="contact-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                    <!-- Contact Form with Netlify Integration -->
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <!-- Honeypot (Spam Protection) -->
+  <div style="display: none;">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </div>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
                 </div>
             </div>
         </section>
