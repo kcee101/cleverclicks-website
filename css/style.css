@@ -541,7 +541,7 @@ header {
     background-color: var(--primary-bg);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form-container h2 {
@@ -550,8 +550,13 @@ header {
     text-align: center;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stacks form elements vertically */
+}
+
 .contact-form label {
-    display: block;
+    display: block; /* Ensures each label starts on a new line */
     margin-bottom: 8px;
     font-weight: bold;
 }
@@ -565,6 +570,7 @@ header {
     background-color: var(--dark-section-bg);
     color: var(--text-color);
     border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border don't affect width */
 }
 
 .contact-form input:focus,
@@ -572,6 +578,10 @@ header {
     outline: 2px solid var(--accent-orange);
 }
 
+/* Style for the reCAPTCHA element */
+[data-netlify-recaptcha] {
+    margin-bottom: 20px;
+}
 /* Legal Pages (Privacy, Terms) */
 .legal-content h2 {
     font-size: 2rem;
