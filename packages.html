@@ -10,154 +10,97 @@
 <body>
 
     <header>
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo-placeholder.png" alt="Clever Clicks Concept Logo">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="packages.html">Growth Packages</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger">
+        <nav class="container">
+            <a href="index.html" class="logo">Clever Clicks Concept</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-            </div>
-        </div>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="packages.html">Growth Packs</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="cta-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="page-hero packages-hero">
+        <section id="packages-intro" class="section-padding text-center">
             <div class="container">
-                <h1>Our Tailored Growth Packages</h1>
-                <p>Choose the perfect bundle of services designed to meet your specific business goals.</p>
+                <h1>Our Growth Packages: Select Your Trajectory</h1>
+                <p class="section-description">Our packages combine our expert services into strategic frameworks designed for predictable ROI and scale.</p>
             </div>
         </section>
 
-        <section class="packages-list section-padding">
+        <section id="packages-list" class="section-padding">
             <div class="container">
                 
-                <div class="package-card">
-                    <div class="package-header">
-                        <i class="fas fa-map-marked-alt package-icon"></i>
-                        <h2>Local Visibility Boost</h2>
-                    </div>
-                    <div class="package-details">
-                        <p>Ideal for local businesses that want to dominate their neighborhood and attract nearby customers.</p>
-                        <h3>Services Included:</h3>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Google Map Pack & "Near Me" Search</li>
-                            <li><i class="fas fa-check-circle"></i> Google Local Service Ads</li>
-                            <li><i class="fas fa-check-circle"></i> Local SEO Optimization</li>
-                            <li><i class="fas fa-check-circle"></i> Website Accessibility (ADA & WCAG)</li>
-                        </ul>
-                        <h3>Best For:</h3>
-                        <p>Plumbers, Electricians, Lawyers, Consultants, Restaurants, and Retail Shops.</p>
-                    </div>
-                </div>
+                <div class="packages-grid">
 
-                <div class="package-card">
-                    <div class="package-header">
-                        <i class="fas fa-bullhorn package-icon"></i>
-                        <h2>Online Authority Builder</h2>
-                    </div>
-                    <div class="package-details">
-                        <p>Perfect for businesses looking to establish a strong, commanding online presence and acquire new customers.</p>
-                        <h3>Services Included:</h3>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Website Design & Development</li>
-                            <li><i class="fas fa-check-circle"></i> Comprehensive SEO Strategy</li>
-                            <li><i class="fas fa-check-circle"></i> Google Ads (Search & Display)</li>
-                            <li><i class="fas fa-check-circle"></i> Facebook Ads Management</li>
+                    <div class="package-card">
+                        <h3>Jumpstart Package: Local Visibility Boost</h3>
+                        <p class="audience">Ideal for: **New Local Businesses, Consultants, Service Providers**</p>
+                        <p class="tagline">Immediate local presence and rapid lead generation using pay-per-lead models.</p>
+                        <ul class="features-list">
+                            <li>**Google Map Pack & 'Near Me' Search** Optimization</li>
+                            <li>**Google Local Service Ads (LSAs)** Setup & Management</li>
+                            <li>Foundational **Website Design & Development** (Basic)</li>
+                            <li>Initial **Business Cost Reduction** Audit (Phase I)</li>
+                            <li><i class="fas fa-times-circle excluded"></i> AI Chat Ads for Lead Generation</li>
                         </ul>
-                        <h3>Best For:</h3>
-                        <p>E-commerce Stores, Service-Based Businesses, and Growing Companies.</p>
+                        <a href="contact.html?package=jumpstart" class="btn primary-cta">Get Started</a>
                     </div>
-                </div>
 
-                <div class="package-card">
-                    <div class="package-header">
-                        <i class="fas fa-robot package-icon"></i>
-                        <h2>AI-Powered Engagement</h2>
-                    </div>
-                    <div class="package-details">
-                        <p>A cutting-edge package for businesses that want to automate customer service and provide 24/7 support.</p>
-                        <h3>Services Included:</h3>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Custom AI Chatbot Services</li>
-                            <li><i class="fas fa-check-circle"></i> Voice AI Technology Integration</li>
-                            <li><i class="fas fa-check-circle"></i> Website Accessibility (ADA & WCAG)</li>
+                    <div class="package-card featured">
+                        <h3>Ascend Package: AI Efficiency & Authority</h3>
+                        <p class="audience">Ideal for: **Scaling Retail/Service Businesses, Mid-sized Organizations**</p>
+                        <p class="tagline">Systematized efficiency gains and market authority across all digital channels.</p>
+                        <ul class="features-list">
+                            <li>Comprehensive **Website Accessibility (ADA & WCAG)** Compliance</li>
+                            <li>Full **SEO** Strategy & Implementation</li>
+                            <li>**Custom AI Chatbot Services** Integration</li>
+                            <li>Full-scale **Business & Voice Search Listing Optimization** (NEW!)</li>
+                            <li>**AI-Driven Workflow Automation** Implementation</li>
                         </ul>
-                        <h3>Best For:</h3>
-                        <p>E-commerce, Real Estate, Healthcare, and Large-Scale Service Providers.</p>
+                        <a href="contact.html?package=ascend" class="btn secondary-cta">Scale Up</a>
                     </div>
-                </div>
 
-                <div class="package-card">
-                    <div class="package-header">
-                        <i class="fas fa-dollar-sign package-icon"></i>
-                        <h2>Business Efficiency Suite</h2>
-                    </div>
-                    <div class="package-details">
-                        <p>For established businesses ready to optimize operations, reduce costs, and improve customer interaction through smart tech.</p>
-                        <h3>Services Included:</h3>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Business Cost Reduction Analysis</li>
-                            <li><i class="fas fa-check-circle"></i> Custom AI Chatbot Services</li>
-                            <li><i class="fas fa-check-circle"></i> Voice AI Technology</li>
-                            <li><i class="fas fa-check-circle"></i> Website Accessibility (ADA & WCAG)</li>
+                    <div class="package-card">
+                        <h3>Transform Package: Total Market Dominance</h3>
+                        <p class="audience">Ideal for: **E-commerce, Large Regional Companies, High-Growth Startups**</p>
+                        <p class="tagline">The ultimate suite for full AI integration, predictive marketing, and market-wide control.</p>
+                        <ul class="features-list">
+                            <li>All features of the Ascend Package</li>
+                            <li>Full **Predictive Analytics** Model Deployment</li>
+                            <li>Dedicated **AI Chat Ads for Local Lead Generation** (NEW!)</li>
+                            <li>**Google Ads & Facebook Ads** Management (Advanced)</li>
+                            <li>**Voice AI Technology** for full call automation</li>
                         </ul>
-                        <h3>Best For:</h3>
-                        <p>Established Businesses and Companies looking for operational optimization.</p>
+                        <a href="contact.html?package=transform" class="btn primary-cta">Achieve Dominance</a>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="cta-section section-padding">
+        <section class="cta-footer-packages section-padding accent-teal-bg">
             <div class="container text-center">
-                <h2>Ready to Choose Your Package?</h2>
-                <p>Contact us today to discuss which package will best accelerate your business growth.</p>
-                <a href="contact.html" class="cta-button">Let's Discuss Your Growth</a>
+                <h2>Not Sure Which Package is Right?</h2>
+                <p>We'll create a custom trajectory based on your current spending and revenue goals.</p>
+                <a href="contact.html" class="btn light-cta">Request a Custom Quote</a>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="images/logo-placeholder-white.png" alt="Clever Clicks Concept Logo">
-            </div>
+        <div class="container">
+            <p>&copy; 2025 Clever Clicks Concept. All rights reserved.</p>
             <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="packages.html">Growth Packages</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Shagari Plaza, Garki Area 1, FCT Abuja</p>
-                <p><i class="fas fa-envelope"></i> support@cleverclicksconcept.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2024 Clever Clicks Concept. All Rights Reserved.</p>
-                <div class="footer-legal">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:support@cleverclicksconcept.com">support@cleverclicksconcept.com</a>
             </div>
         </div>
     </footer>
