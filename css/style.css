@@ -559,6 +559,11 @@ footer .container {
         grid-template-columns: 1fr; /* Stack columns on mobile */
         gap: 2em;
     }
+    
+    /* FIX: Force the form block to appear first on mobile */
+    .contact-form-block {
+        order: -1; 
+    }
 
     .contact-info-block {
         padding-right: 0;
